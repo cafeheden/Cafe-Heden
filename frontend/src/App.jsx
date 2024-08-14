@@ -1,8 +1,11 @@
 import React from 'react'
 
+// Importign Pages
+import Home from './pages/Home'
+
 const App = () => {
   return (
-    <div className='text-red'>This is App</div>
+    <Home />
   )
 }
 
