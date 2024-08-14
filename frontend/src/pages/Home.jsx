@@ -4,6 +4,7 @@ import React from 'react'
 import HeroSection from "../components/Home/HeroSection"
 import Header from '../components/Header/Header'
 import FeaturedSection from '../components/Home/CoffeeBeansSection'
+import CategorySection from '../components/Home/CategorySection'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Header />
         <HeroSection />
         <FeaturedSection />
+        <CategorySection />
     </div>
   )
 }

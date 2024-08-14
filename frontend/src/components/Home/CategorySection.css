@@ -1,0 +1,14 @@
+/* Custom zoom effect for background image on hover */
+@keyframes zoomIn {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 110%;
+    }
+  }
+  
+  .hover\:zoom-in:hover {
+    animation: zoomIn 0.5s forwards;
+  }
+  
