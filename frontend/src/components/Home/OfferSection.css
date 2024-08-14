@@ -1,0 +1,61 @@
+/* Ensure the section background image covers the entire area */
+.offer-section {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+  }
+  
+  /* Adjust image animations */
+  .slide-left-right {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slide-left-right 10s infinite alternate ease-in-out;
+  }
+  
+  .slide-right-left {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slide-right-left 10s infinite alternate ease-in-out;
+  }
+  
+  @keyframes slide-left-right {
+    0% {
+      transform: translate(-30px, -50%);
+    }
+    100% {
+      transform: translate(30px, -50%);
+    }
+  }
+  
+  @keyframes slide-right-left {
+    0% {
+      transform: translate(30px, -50%);
+    }
+    100% {
+      transform: translate(-30px, -50%);
+    }
+  }
+  
+  /* Ensure content remains centered */
+  .offer-section .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .offer-section .content h1,
+  .offer-section .content p,
+  .offer-section .content .button {
+    margin-top: 1rem;
+  }
+  
