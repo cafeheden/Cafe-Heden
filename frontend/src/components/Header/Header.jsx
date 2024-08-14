@@ -8,10 +8,10 @@ function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 p-4 md:p-8 flex items-center justify-between">
+    <header className="fixed bg-secondaryColor md:bg-transparent top-0 left-0 w-full z-50 px-8 py-5 md:p-8 flex items-center justify-between">
       {/* Brand Logo */}
       <div className="flex-shrink-0">
-        <img src={BrandLogo} alt="Cafe HideIn Logo" className="h-12" />
+        <img src={BrandLogo} alt="Cafe HideIn Logo" className="h-8 md:h-12" />
       </div>
 
       {/* Order Online Button */}
