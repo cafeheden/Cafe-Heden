@@ -9,6 +9,7 @@ import ManageMenu from './pages/Admin Side/ManageMenu'
 import ManageOrders from './pages/Admin Side/ManageOrders'
 import Billing from './pages/Admin Side/Billing'
 import ProtectedRoute from './pages/ProtectedRoute'
+import Layout from './components/Admin_Comp/Admin Layout/Layout';
 
 const App = () => {
   return (
@@ -16,10 +17,12 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/admin-login" element={<AdminLogin />} />
 
-      <Route path='/admin/home' element={<ProtectedRoute><AdminHomePage /></ProtectedRoute>} />
-      <Route path='/admin/manage-menu' element={<ProtectedRoute><ManageMenu /></ProtectedRoute>} />
-      <Route path='/admin/manage-orders' element={<ProtectedRoute><ManageOrders /></ProtectedRoute>} />
-      <Route path='/admin/billing' element={<ProtectedRoute><Billing /></ProtectedRoute>} />
+      <Route path='/' element={<Layout />}>
+        <Route path='/admin/home' element={<ProtectedRoute><AdminHomePage /></ProtectedRoute>} />
+        <Route path='/admin/manage-menu' element={<ProtectedRoute><ManageMenu /></ProtectedRoute>} />
+        <Route path='/admin/manage-orders' element={<ProtectedRoute><ManageOrders /></ProtectedRoute>} />
+        <Route path='/admin/billing' element={<ProtectedRoute><Billing /></ProtectedRoute>} />
+      </Route>
     </Routes>
   )
 }

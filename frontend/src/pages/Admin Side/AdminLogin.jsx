@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { handleError, handleSuccess } from '../../utils/ToastMessageUtil'
 import { ToastContainer } from "react-toastify";
 
 // Importing Icons and Images
@@ -27,7 +28,7 @@ const AdminLogin = () => {
       return handleError('All fields are required')
     }
     try {
-      const url = "http://localhost:8080/api/admin/login";
+      const url = "http://localhost:8080/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {
