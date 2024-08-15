@@ -2,7 +2,7 @@
 .offer-section {
     position: relative;
     overflow: hidden;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
     /* background-size: cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
@@ -12,18 +12,26 @@
   .slide-left-right {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: slide-left-right 10s infinite alternate ease-in-out;
-  }
+    transform: translateY(-100%);
+    animation: slide-left-right 2s infinite alternate ease-in-out;
+    -webkit-animation: slide-left-right 2s infinite alternate ease-in-out;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
   
   .slide-right-left {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: slide-right-left 10s infinite alternate ease-in-out;
-  }
+    transform: translateY(-100%);
+    animation: slide-right-left 2s infinite alternate ease-in-out;
+    -webkit-animation: slide-right-left 2s infinite alternate ease-in-out;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
   
   @keyframes slide-left-right {
     0% {
@@ -44,10 +52,11 @@
   }
   
   /* Ensure content remains centered */
-  .offer-section .content {
+  /* .offer-section .content {
     position: relative;
     z-index: 10;
     text-align: center;
+    justify-content: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -57,5 +66,5 @@
   .offer-section .content p,
   .offer-section .content .button {
     margin-top: 1rem;
-  }
+  } */
   

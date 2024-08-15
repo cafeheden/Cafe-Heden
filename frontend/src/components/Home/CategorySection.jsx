@@ -5,7 +5,7 @@ import './CategorySection.css';
 const CategorySection = () => {
   return (
     <section className="foods-thumb p-0">
-      <ul className="flex flex-wrap m-0 p-0 list-none gap-0">
+      <ul className="grid grid-cols-2 md:grid-none sm:flex sm:flex-wrap m-0 p-0 list-none gap-0">
         {/* Premium Tea */}
         <li
           className="relative flex-none w-full sm:w-1/2 md:w-1/2 lg:w-1/4 h-64 md:h-[385px] overflow-hidden bg-cover bg-center transition-transform duration-500 ease-in-out transform hover:zoom-in"
@@ -53,7 +53,7 @@ const CategorySection = () => {
 
         {/* Pan Asian */}
         <li
-          className="relative flex-none w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-56 md:h-[385px] lg:h-56 overflow-hidden bg-cover bg-center transition-transform duration-500 ease-in-out transform hover:zoom-in"
+          className="relative flex-none w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-64 sm:h-64 md:h-[385px] lg:h-56 overflow-hidden bg-cover bg-center transition-transform duration-500 ease-in-out transform hover:zoom-in"
           style={{ backgroundImage: "url('/src/assets/pan-asian-food.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-orange-800 to-transparent bg-opacity-50 flex flex-col justify-center items-start p-4">
@@ -83,12 +83,12 @@ const CategorySection = () => {
 
         {/* And Much More */}
         <li className="relative flex-none w-full sm:w-1/2 md:w-1/2 lg:w-1/6 h-56 md:h-56 overflow-hidden bg-gray-200 flex flex-col justify-center items-center hover:text-primaryColor">
-          <div className="flex flex-col justify-center items-center">
-            <h2 className="text-xl md:text-2xl font-bold text-secondaryColor">
+          <div className="flex flex-col justify-center items-start">
+            <h2 className="text-xl md:text-2xl font-bold text-secondaryColor hover:text-primaryColor">
               AND MUCH
             </h2>
             <div className="flex items-end">
-              <span className="text-xl md:text-2xl font-bold text-secondaryColor flex-shrink-0">
+              <span className="text-xl md:text-2xl font-bold text-secondaryColor flex-shrink-0 hover:text-primaryColor">
                 MORE
               </span>
               <div className="ml-4 flex items-end">
