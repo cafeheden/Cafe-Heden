@@ -47,7 +47,7 @@ const OfferSection = () => {
             Order Online
           </button>
           <button className="px-2 md:px-8 py-2 border-2
-          border-transparent text-tertiaryColor bg-secondaryColor md:border-secondaryColor md:text-secondaryColor font-semibold rounded-full hover:bg-primaryColor hover:border-transparent hover:text-tertiaryColor transition-colors w-full md:w-auto">
+          border-transparent text-tertiaryColor bg-secondaryColor md:border-secondaryColor md:bg-transparent md:text-secondaryColor font-semibold rounded-full hover:bg-primaryColor hover:border-transparent hover:text-tertiaryColor transition-colors w-full md:w-auto">
             View Menu
           </button>
         </div>

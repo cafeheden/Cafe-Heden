@@ -40,7 +40,7 @@ function HeroSection() {
           animate={{ y: '0%', opacity: '100%' }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-tertiaryColor mb-4">The Way Nature Intended</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-tertiaryColor mb-10">The Way<br/>Nature Intended</h1>
           <button className="bg-primaryColor text-tertiaryColor py-3 px-6 rounded-full font-semibold text-lg transition-transform transform hover:scale-105 hover:bg-orange-400">
             View Menu
           </button>
