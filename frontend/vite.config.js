@@ -9,8 +9,14 @@ export default defineConfig({
       '/food-menu': {
         target: "http://localhost:8080",
         changeOrigin: true,
-        secure: true,
+        secure: false,
+        // rewrite: (path) => path.replace(/^\/food-menu/, ''),
       },
+      '/place-order': {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+        secure: false,
+      }
     }
   }
 })
